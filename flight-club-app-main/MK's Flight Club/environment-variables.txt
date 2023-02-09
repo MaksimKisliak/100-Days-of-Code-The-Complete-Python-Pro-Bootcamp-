@@ -1,0 +1,13 @@
+EMAIL=makskislyak1@mail.ru;
+EMAIL_PASSWORD=#;
+NUTRIONIX_API_ID=1c50b9ca;
+NUTRIONIX_API_KEY=#;
+NUTRIONIX_EXERCISE_ENDPOINT=https://trackapi.nutritionix.com/v2/natural/exercise;
+SHEET_ENDPOINT_PRICES=https://api.sheety.co/31e0bcf6faef905452c27badb94434d7/flightDeals/prices;
+SHEET_ENDPOINT_USERS=https://api.sheety.co/31e0bcf6faef905452c27badb94434d7/flightDeals/users;
+SHEETY_TOKEN=#;
+TEQUILA_KIWI_API_KEY=#;
+TEQUILA_KIWI_LOCATION_QUERY_ENDPOINT=https://api.tequila.kiwi.com/locations/query;
+TEQUILA_KIWI_SEARCH_QUERY_ENDPOINT=https://api.tequila.kiwi.com/v2/search;
+TWILIO_SID=#;
+TWILIO_TOKEN=#

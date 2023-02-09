@@ -1,0 +1,31 @@
+# In this implementation, the caesar function takes a text string, a key value, and a boolean decode flag. 
+# If decode is set to True, the function subtracts the key value from 26 to effectively reverse the encoding. 
+# The function iterates through each character in the text, and if the character is an alphabetical letter, 
+# it uses the Caesar cipher algorithm to encode or decode the character based on the key value. 
+# The encoded or decoded text is returned as the result. The main program takes input from the user for the text, key, and mode (encode or decode), 
+# and passes the inputs to the caesar function to generate the encoded or decoded text.
+
+def caesar(text, key, decode=False):
+    if decode:
+        key = 26 - key
+
+    result = ""
+    for char in text:
+        if char.isalpha():
+            base = ord('A') if char.isupper() else ord('a')
+            result += chr((ord(char) - base + key) % 26 + base)
+        else:
+            result += char
+
+    return result
+
+text = input("Enter text: ")
+key = int(input("Enter key: "))
+mode = input("Encode or decode (e/d)? ").lower()
+
+if mode == "e":
+    print("Encoded text:", caesar(text, key))
+elif mode == "d":
+    print("Decoded text:", caesar(text, key, decode=True))
+else:
+    print("Invalid mode.")

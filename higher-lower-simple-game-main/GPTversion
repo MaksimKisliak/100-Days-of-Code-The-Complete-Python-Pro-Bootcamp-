@@ -1,0 +1,46 @@
+# Here is a basic implementation of the higher-lower game using Python that incorporates global monthly search volume data from Google:
+# Note: You'll need to obtain your own API key for the Google Custom Search API and replace YOUR_API_KEY_HERE in the code with your key.
+
+import random
+import requests
+import json
+
+print("Welcome to the Higher-Lower game based on Google Global Monthly Searches!")
+print("The goal is to guess if the next keyword has higher or lower global monthly search volume than the current one.\n")
+
+api_key = "YOUR_API_KEY_HERE"
+
+def get_search_volume(keyword):
+    url = f"https://www.googleapis.com/customsearch/v1?key={api_key}&cx=017576662512468239146:omuauf_lfve&q={keyword}"
+    response = requests.get(url)
+    result = json.loads(response.text)
+    return result["searchInformation"]["totalResults"]
+
+keywords = ["dog", "cat", "car", "phone", "computer"]
+
+current_keyword = random.choice(keywords)
+current_volume = get_search_volume(current_keyword)
+score = 0
+
+while True:
+    print(f"The current keyword is: {current_keyword} with {current_volume:,} global monthly searches.")
+    guess = input("Will the next keyword have higher or lower global monthly search volume? (H/L) ").upper()
+    if guess not in ["H", "L"]:
+        print("Invalid input. Please enter 'H' for higher or 'L' for lower.")
+        continue
+
+    next_keyword = random.choice(keywords)
+    next_volume = get_search_volume(next_keyword)
+    print(f"The next keyword is: {next_keyword} with {next_volume:,} global monthly searches.")
+
+    if (guess == "H" and next_volume > current_volume) or (guess == "L" and next_volume < current_volume):
+        print("Correct!\n")
+        score += 1
+    else:
+        print(f"Incorrect. Your score is {score}.\n")
+        break
+
+    current_keyword = next_keyword
+    current_volume = next_volume
+
+print(f"Thanks for playing. Your final score is {score}.")
