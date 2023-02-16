@@ -1,1 +1,3 @@
 # Tindog
+
+just html & CSS
