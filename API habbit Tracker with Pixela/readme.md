@@ -1,0 +1,2 @@
+ <p>Today, we're going to build a website just like that using Flask/WTForms/SQLite/SQLAlchemy and more. It will allow us to create a beautiful website that lists our top 10 films of all time. As we watch more movies, we can always update our list and keep track of which movies to recommend people.</p>
+ <p>e.g.</p><img align="middle" src="https://img-c.udemycdn.com/redactor/raw/2020-10-06_11-25-09-f5178d077e01e576671fc418a7d32880.gif">
