@@ -1163,7 +1163,3 @@ So what are you waiting for?&nbsp;Click the buy now button and join the world's 
     <li>If you are an intermediate Python programmer then you know 100 days of code challenges will help you level up.
     </li>
 </ul>
-
-
-Show moreShow less
- 
