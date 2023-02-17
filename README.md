@@ -1,4 +1,5 @@
 # 100 Days of Code: The Complete Python Pro Bootcamp  
+### Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!
 
  ## What you'll learn
 
@@ -12,6 +13,14 @@
  <li>Build games like Blackjack, Pong and Snake using Python</li>
  <li>Build GUIs and Desktop applications with Python</li>
 
+### This course includes:
+
+ <li>60 hours on-demand video</li>
+ <li>230 articles</li>
+ <li>129 downloadable resources</li>
+
+### Course content
+#### 101 sections • 676 lectures • 64h 3m total length
 
  ## Day 1 - Beginner - Working with Variables in Python to Manage Data17 lectures • 1hr 30min
 
@@ -1029,3 +1038,132 @@ Final Stretch3 lectures • 2hr 41min
  <li>Recording of our Live AMA (aka AAA - Ask Angela Anything)59:52</li>
  <li>Study With Me01:41:22</li>
  <li>Bonus Lecture: Check out my other courses00:05</li>
+ 
+ ## Description
+
+
+Welcome to the 100 Days of Code - The Complete Python Pro Bootcamp, the only course you need to learn to code with Python. With over 500,000 5 STAR reviews and a 4.8 average, my courses are some of the HIGHEST&nbsp;RATED courses in the history of Udemy!&nbsp;&nbsp;
+100 days, 1 hour per day, learn to build 1 project per day, this is how you master Python.
+At 60+ hours, this Python course is without a doubt the most comprehensive Python course available anywhere online. Even if you have zero programming experience, this course will take you from beginner to professional. Here's why:
+<ul>
+    <li>The course is taught by the lead instructor at the App Brewery, London's best in-person programming
+        Bootcamp.
+    </li>
+    <li>The course has been updated to be 2023 ready and you'll be learning the latest tools and technologies used at
+        large companies such as Apple, Google and Netflix.
+    </li>
+    <li>This course doesn't cut any corners, there are beautiful animated explanation videos and tens of real-world
+        projects which you will get to build. e.g. Tinder auto swiper, Snake game, Blog Website, LinkedIn Auto Submit
+        Job Application
+    </li>
+    <li>The curriculum was developed over a period of 2 years, with comprehensive student testing and feedback.</li>
+    <li>We've taught over 600,000 students how to code and many have gone on to change their lives by becoming
+        professional developers or starting their own tech startup.
+    </li>
+    <li>You'll save yourself over $12,000 by enrolling, and still get access to the same teaching materials and learn
+        from the same instructor and curriculum as our in-person programming Bootcamp.
+    </li>
+    <li>The course is constantly updated with new content, with new projects and modules determined by students -
+        that's you!
+    </li>
+</ul>
+<br>
+We'll take you step-by-step through engaging video tutorials and teach you everything you need to know to succeed as a Python developer.
+The course includes over 65 hours of HD video tutorials and builds your programming knowledge while making real-world Python projects.
+<br>
+Throughout this comprehensive course, we cover a massive amount of tools and technologies, including:
+<ul>
+    <li>Python 3 - the latest version of Python</li>
+    <li>PyCharm, Jupyter Notebook, Google Colab</li>
+    <li>Python&nbsp;Scripting and Automation</li>
+    <li>Python Game Development</li>
+    <li>Web Scraping</li>
+    <li>Beautiful Soup</li>
+    <li>Selenium Web Driver</li>
+    <li>Request</li>
+    <li>WTForms</li>
+    <li>Data Science</li>
+    <li>Pandas</li>
+    <li>NumPy</li>
+    <li>Matplotlib</li>
+    <li>Plotly</li>
+    <li>Scikit learn</li>
+    <li>Seaborn</li>
+    <li>Turtle</li>
+    <li>Python GUI Desktop App Development</li>
+    <li>Tkinter</li>
+    <li>Front-End Web Development</li>
+    <li>HTML 5</li>
+    <li>CSS 3</li>
+    <li>Bootstrap 4</li>
+    <li>Bash Command Line</li>
+    <li>Git, GitHub and Version Control</li>
+    <li>Backend Web Development</li>
+    <li>Flask</li>
+    <li>REST</li>
+    <li>APIs</li>
+    <li>Databases</li>
+    <li>SQL</li>
+    <li>SQLite</li>
+    <li>PostgreSQL</li>
+    <li>Authentication</li>
+    <li>Web Design</li>
+    <li>Deployment with GitHub Pages, Heroku and GUnicorn</li>
+    <li>and much much more!</li>
+</ul>
+By the end of this course, you will be fluently programming&nbsp;in Python and you'll be so good at Python that you can get a job or use the language professionally.
+You'll also build a portfolio of 100 projects that you can show off to any potential employer. Including:
+<ul>
+    <li>Blackjack</li>
+    <li>Snake Game</li>
+    <li>Pong Game</li>
+    <li>Auto Swipe on Tinder</li>
+    <li>Auto Job Applications on LinkedIn</li>
+    <li>Automate Birthday Emails/SMS</li>
+    <li>Fully Fledged Blog Website</li>
+    <li>Build Your Own Public API</li>
+    <li>Data Science with Google Trends</li>
+    <li>Analysing Lego Datasets</li>
+    <li>Google App Store Analysis</li>
+    <li>and much much more!</li>
+</ul>
+Sign up today, and look forward to:
+<ul>
+    <li>Video Lectures</li>
+    <li>Code Challenges and Exercises</li>
+    <li>Fully Fledged Projects</li>
+    <li>Quizzes</li>
+    <li>Programming Resources and Cheatsheets</li>
+    <li>Downloads</li>
+    <li>Our best selling 12 Rules to Learn to Code eBook</li>
+    <li>$12,000+&nbsp;Python Pro Bootcamp&nbsp;course materials and curriculum</li>
+</ul>
+<br>
+Don't just take my word for it, check out what existing students have to say about my courses:
+"Angela is just incredible, awesome and just fantastic in this course. I've never had such an instructor; detailed in every aspect of the course, gives precise explanations, gives you the anxiety to learn etc. She's got that ability to make fun while explaining things for better understanding. I really love this course." - Ekeu MonkamUlrich
+"Angela is very thorough without ever being boring. I've taken MANY online courses in my life including my Bachelors and Masters degrees. She is by far the best instructor I've ever had. This course is packed with thousands of dollars worth of great instruction, and paced well enough for anyone to pick coding up and run with it- Thank you!" - J Carlucci
+"Love the way Angela explains things. Easy to follow and full of logic. I can say she must spend a lot of energy creating this great course. Thank you and I recommend it to all who's interested in coding!" - Yiqing Zheng
+"So far (on my third day) this course has taught me more than I was able to learn in multiple other programming courses. This course is clearly outlined and builds upon itself gradually in an easy to understand way." - Normal Ramsey
+"It's a different approach to teaching Web Development. I like that you are given everything possible to succeed from the onset." - Ronick Thomas
+The tutor is simply AMAZING, by far the best tutor I have ever had. I would give her 10 stars out of 5. She is not just punching the code and talking to herself, but she is actually explaining things. She keeps on giving really useful hints and she will give you a great load of other references. I always knew what I was doing and why I was doing it. All the extra challenges have just made me remember and understand things better. - Peter Dlugos
+<br>
+<br>
+REMEMBER… I'm so confident that you'll love this course that&nbsp;we're offering a FULL money-back guarantee for&nbsp;30 days! So it's a complete no-brainer, sign up today with ZERO&nbsp;risk and EVERYTHING to gain.
+So what are you waiting for?&nbsp;Click the buy now button and join the world's highest-rated development course.
+
+
+## Who this course is for:
+<ul>
+    <li>If you want to learn to code from scratch through building fun and useful projects, then take this course.</li>
+    <li>If you want to start your own startup by building your own websites and web apps.</li>
+    <li>If you are a complete beginner then this course will be everything you need to become a Python professional</li>
+    <li>If you are a seasoned programmer wanting to switch to Python then this is the quickest way. Learn through coding
+        projects.
+    </li>
+    <li>If you are an intermediate Python programmer then you know 100 days of code challenges will help you level up.
+    </li>
+</ul>
+
+
+Show moreShow less
+ 
