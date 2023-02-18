@@ -1127,17 +1127,7 @@ You'll also build a portfolio of 100 projects that you can show off to any poten
     <li>Google App Store Analysis</li>
     <li>and much much more!</li>
 </ul>
-Sign up today, and look forward to:
-<ul>
-    <li>Video Lectures</li>
-    <li>Code Challenges and Exercises</li>
-    <li>Fully Fledged Projects</li>
-    <li>Quizzes</li>
-    <li>Programming Resources and Cheatsheets</li>
-    <li>Downloads</li>
-    <li>Our best selling 12 Rules to Learn to Code eBook</li>
-    <li>$12,000+&nbsp;Python Pro Bootcamp&nbsp;course materials and curriculum</li>
-</ul>
+
 <br>
 
 ## Who this course is for:
