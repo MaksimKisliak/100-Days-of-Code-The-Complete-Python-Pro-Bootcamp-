@@ -1139,18 +1139,6 @@ Sign up today, and look forward to:
     <li>$12,000+&nbsp;Python Pro Bootcamp&nbsp;course materials and curriculum</li>
 </ul>
 <br>
-Don't just take my word for it, check out what existing students have to say about my courses:
-"Angela is just incredible, awesome and just fantastic in this course. I've never had such an instructor; detailed in every aspect of the course, gives precise explanations, gives you the anxiety to learn etc. She's got that ability to make fun while explaining things for better understanding. I really love this course." - Ekeu MonkamUlrich
-"Angela is very thorough without ever being boring. I've taken MANY online courses in my life including my Bachelors and Masters degrees. She is by far the best instructor I've ever had. This course is packed with thousands of dollars worth of great instruction, and paced well enough for anyone to pick coding up and run with it- Thank you!" - J Carlucci
-"Love the way Angela explains things. Easy to follow and full of logic. I can say she must spend a lot of energy creating this great course. Thank you and I recommend it to all who's interested in coding!" - Yiqing Zheng
-"So far (on my third day) this course has taught me more than I was able to learn in multiple other programming courses. This course is clearly outlined and builds upon itself gradually in an easy to understand way." - Normal Ramsey
-"It's a different approach to teaching Web Development. I like that you are given everything possible to succeed from the onset." - Ronick Thomas
-The tutor is simply AMAZING, by far the best tutor I have ever had. I would give her 10 stars out of 5. She is not just punching the code and talking to herself, but she is actually explaining things. She keeps on giving really useful hints and she will give you a great load of other references. I always knew what I was doing and why I was doing it. All the extra challenges have just made me remember and understand things better. - Peter Dlugos
-<br>
-<br>
-REMEMBER… I'm so confident that you'll love this course that&nbsp;we're offering a FULL money-back guarantee for&nbsp;30 days! So it's a complete no-brainer, sign up today with ZERO&nbsp;risk and EVERYTHING to gain.
-So what are you waiting for?&nbsp;Click the buy now button and join the world's highest-rated development course.
-
 
 ## Who this course is for:
 <ul>
