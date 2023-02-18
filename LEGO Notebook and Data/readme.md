@@ -23,3 +23,18 @@ sets tend to have more or fewer parts than newer sets?</li>
 
 <ul><li><p>How to combine a Notebook with HTML&nbsp;Markup.</p></li><li><p>Apply Python List slicing techniques to Pandas DataFrames.</p></li><li><p>How to aggregate data using the <code>.agg()</code> function.</p></li><li><p>How to create scatter plots, bar charts, and line charts with two axes in Matplotlib.</p></li><li><p>Understand database schemas that are organised by primary and foreign keys.</p></li><li><p>How to merge DataFrames that share a common key</p></li></ul>
 </ul>
+<br>
+<p>In this lesson we looked at how to:</p>
+<ul>
+ <li><p>use HTML&nbsp;Markdown in Notebooks, such as section headings <code>#</code> and how to embed images with the <code>&lt;img&gt;</code> tag.</p></li>
+ <li><p>combine the <code>groupby()</code> and <code>count()</code> functions to aggregate data</p></li>
+ <li><p>use the <code>.value_counts()</code> function</p></li>
+ <li><p>slice DataFrames using the square bracket notation e.g., <code>df[:-2]</code> or <code>df[:10]</code></p></li>
+ <li><p>use the <code>.agg()</code> function to run an operation on a particular column</p></li>
+ <li><p><code>rename()</code> columns of DataFrames</p></li>
+ <li><p>create a line chart with two separate axes to visualise data that have different scales.</p></li>
+ <li><p>create a scatter plot in Matplotlib</p></li>
+ <li><p>work with tables in a relational database by using primary and foreign keys</p></li>
+ <li><p><code>.merge()</code> DataFrames along a particular column</p></li>
+ <li><p>create a bar chart with Matplotlib</p></li>
+</ul>
