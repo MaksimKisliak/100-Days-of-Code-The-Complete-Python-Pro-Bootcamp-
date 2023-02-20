@@ -1,1 +1,10 @@
-# AmazonTracker
+<p>This is a Python script that scrapes product information and price from an Amazon URL and sends a price alert email if the price is below a set threshold.</p>
+<p>The first part of the script imports necessary libraries, including the <code>smtplib</code> library for sending email, <code>requests</code> library for making HTTP requests, and <code>BeautifulSoup</code> library for parsing HTML.</p>
+<p>Next, the email address and password are defined for the email account that will be used to send the price alert email.</p>
+<p>The URL of the Amazon product to be scraped is defined. A user agent and language header are also defined to mimic the behavior of a real user accessing the webpage.</p>
+<p>An HTTP GET request is sent to the Amazon URL using the <code>requests</code> library with the defined headers. The response is stored in the <code>response</code> variable.</p>
+<p>The response content is then parsed using <code>BeautifulSoup</code> with the <code>lxml</code> parser. The resulting HTML structure is stored in the <code>soup</code> variable. The script then prints the parsed HTML in a readable format for inspection.</p>
+<p>The script then extracts the price of the product from the HTML using <code>soup.find()</code> method. The <code>name</code> and <code>class_</code> parameters are used to locate the element containing the price. The extracted price is then converted to a float for further processing. The script also extracts the title of the product in a similar way.</p>
+<p>The <code>BUY_PRICE</code> variable is then set to the threshold price for the price alert email.</p>
+<p>If the price of the product is below the <code>BUY_PRICE</code>, the script composes an email message containing the title, price, and URL of the product. It then uses the <code>smtplib</code> library to connect to the SMTP server of the email provider (in this case, Mail.ru) and sends the email message to the specified email address.</p>
+<p>Overall, this script demonstrates how to scrape product information from a webpage using Python and send email alerts based on specific conditions. Note that web scraping may violate the terms of service of some websites, so it is important to check the legality of web scraping activities before implementing such scripts.</p>
