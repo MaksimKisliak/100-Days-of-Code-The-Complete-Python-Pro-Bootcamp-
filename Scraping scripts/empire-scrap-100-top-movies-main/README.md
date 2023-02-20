@@ -1,11 +1,4 @@
-The code scrapes a webpage that features a list of movies and their information, then extracts the movie titles using BeautifulSoup and saves them to a text file. It then reads the text file and prints the movie titles in reverse order.
-
-The key part of the code is the find_articles function, which recursively searches for articles (in this case, movie titles) in a nested data structure (in this case, a dictionary or a list).
-
-The yield keyword is used to define a generator function, which allows the function to return a generator object that can be iterated over one item at a time. In this case, the yield keyword is used to return the movie titles one at a time as they are found, rather than returning a list of all the titles at once.
-
-In the find_articles function, if the input data is a dictionary, the function loops through the key-value pairs in the dictionary and checks if the key starts with "ImageMeta:". If it does, the function yields the title text of the article (in this case, the movie title). If it doesn't, the function recursively searches for articles in the value.
-
-If the input data is a list, the function loops through the items in the list and recursively searches for articles in each item.
-
-Finally, the found articles are written to a text file and then printed in reverse order.
+<p>This code is a Python script that scrapes a web page that lists the "100 Best Movies of All Time" according to Empire magazine, using the <code>requests</code> and <code>BeautifulSoup</code> libraries to retrieve and parse the HTML of the page. The scraped data is then processed and stored using the <code>json</code> library, and finally written to a text file.</p>
+<p>The script defines a function called <code>find_articles</code> that recursively searches a nested data structure, which could be a dictionary or a list, for articles. In this case, it searches for the titles of the movies on the Empire magazine list. The function checks each key-value pair in the dictionary and each item in the list, and if the key starts with "ImageMeta:", it yields the value of the "titleText" key in the corresponding dictionary. If the key doesn't start with "ImageMeta:", the function recursively calls itself on the value to continue the search.</p>
+<p>The script also defines a <code>url</code> variable with the URL of the Empire magazine web page, and retrieves the contents of the page using <code>requests</code> and parses it using <code>BeautifulSoup</code>. The <code>json</code> library is used to load the contents of a specific HTML tag that contains the structured data of the web page. This structured data is then processed using the <code>find_articles</code> function to extract the titles of the movies on the list.</p>
+<p>Finally, the script writes the extracted movie titles to a text file, <code>list_movie.txt</code>, and prints them out in reverse order. The writing to file is commented out but can be activated by uncommenting the appropriate lines.</p>
