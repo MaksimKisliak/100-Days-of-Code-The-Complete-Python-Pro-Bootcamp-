@@ -1,1 +1,8 @@
-# Insta-Bot-Selenium
+<p>This Python code uses Selenium and the Chrome driver to automate following the followers of a specified Instagram account.</p>
+<p>First, the necessary libraries are imported, including Selenium and ChromeDriverManager, which manages the driver installation.</p>
+<p>Then, the user ID, account password, and Instagram account whose followers to follow are specified as global variables.</p>
+<p>Next, a class named <code>InstaFollower</code> is defined. Its constructor initializes a new Chrome driver with specified Chrome options, such as the "detach" option that allows the browser window to stay open after the script has completed execution. The constructor also opens the Instagram login page.</p>
+<p>The <code>login()</code> method logs into the Instagram account by locating the username and password input fields using <code>find_element()</code> and entering the user ID and account password, respectively. Then, it simulates pressing the Enter key to submit the login form.</p>
+<p>The <code>find_followers()</code> method navigates to the profile page of the Instagram account whose followers to follow. Then, it clicks the followers button to display a list of the account's followers.</p>
+<p>The <code>follow()</code> method follows a specified number of followers. In this case, it follows two followers, but this number can be adjusted as desired. It does this by looping through the followers and clicking the "Follow" button for each one. If the button is obscured, the script catches an <code>ElementClickInterceptedException</code> and clicks the "Cancel" button to close the dialog.</p>
+<p>Finally, the main program creates an instance of the <code>InstaFollower</code> class, waits for three seconds, logs into the account, finds the followers, and follows two of them.</p>
