@@ -1,3 +1,4 @@
+## follow-each-one.py
 <p>This Python code uses Selenium and the Chrome driver to automate following the followers of a specified Instagram account.</p>
 <p>First, the necessary libraries are imported, including Selenium and ChromeDriverManager, which manages the driver installation.</p>
 <p>Then, the user ID, account password, and Instagram account whose followers to follow are specified as global variables.</p>
