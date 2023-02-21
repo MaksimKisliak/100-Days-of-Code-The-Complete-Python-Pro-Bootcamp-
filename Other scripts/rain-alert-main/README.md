@@ -1,13 +1,6 @@
 # Weather Forecasting Application
-<p>This is a Python application that fetches weather forecast data from the OpenWeather API for a specific location and sends SMS messages via Twilio to inform the user whether they should take an umbrella with them based on the forecast.</p>Installation
-<p>To install the application, you need to do the following steps:</p>
-<ol>
- <li>Clone the repository to your local machine.</li>
- <li>Install the required Python libraries by running <code>pip install -r requirements.txt</code>.</li>
- <li>Add your OpenWeather API key and Twilio account details to the <code>config.py</code> file.</li>
- <li>Modify the <code>just_do_it</code> function in <code>weather_forecast.py</code> to suit your needs (e.g., change the forecast period or the time of day when the function is scheduled to run).</li>
-</ol>Usage
-<p>To run the application, you need to execute the <code>weather_forecast.py</code> file. You can do this by running <code>python weather_forecast.py</code> in the command line.</p>
-<p>The application will fetch the weather forecast data from the OpenWeather API, check for the presence of precipitation in the forecast, and send an SMS message via Twilio to the specified phone number with a recommendation to take an umbrella or not.</p>
-<p>The <code>just_do_it</code> function is scheduled to run every day at a specific time using the <code>schedule</code> library. You can modify the scheduling parameters in the function to suit your needs.</p>Credits
 
+<p>The Python script uses the OpenWeather API and the Twilio API to implement a weather forecasting application. The <code>OWAForecast</code> class is responsible for fetching weather data from the OpenWeather API and the <code>TwilioSMS</code> class is responsible for sending SMS messages via the Twilio API. The <code>just_do_it</code> function ties everything together by creating instances of the <code>OWAForecast</code> and <code>TwilioSMS</code> classes and scheduling the function to run every day at a specific time using the <code>schedule</code> library.</p>
+<p>The <code>OWAForecast</code> class fetches the weather IDs for the specified forecast period and checks if any of the IDs in the forecast period indicate the presence of precipitation. The <code>TwilioSMS</code> class sends SMS messages to the specified phone number with a recommendation to take an umbrella or not based on the forecast.</p>
+<p>The <code>just_do_it</code> function specifies the forecast period, the time of day when the function is scheduled to run, and calls the <code>fetch_id</code> and <code>check_for_precipitations</code> methods of the <code>OWAForecast</code> class and the <code>message_take_umbrella</code> and <code>message_do_not_take_umbrella</code> methods of the <code>TwilioSMS</code> class depending on whether the forecast indicates precipitation or not.</p>
+<p>The application is configurable by modifying the forecast period, the API endpoints and API keys for the OpenWeather API and Twilio API, and the phone number that receives the SMS messages.</p>
