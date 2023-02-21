@@ -1,6 +1,6 @@
 <p>This code is an example of how to use the Pixela API to create and update a graph to track cycling activity. The code uses the <code>requests</code> module to send HTTP requests to the Pixela API.</p>
 <p>First, the code defines some constants for the username, token, and graph ID that will be used throughout the script. These values need to be set to valid values for a Pixela user account.</p>
-<code>USERNAME = <span>"YOUR USERNAME"</span>
+<pre><code>USERNAME = <span>"YOUR USERNAME"</span>
 TOKEN = <span>"YOUR SELF GENERATED TOKEN"</span>
 GRAPH_ID = <span>"YOUR GRAPH ID"</span>
 </code></pre>
@@ -17,7 +17,7 @@ GRAPH_ID = <span>"YOUR GRAPH ID"</span>
 </code></pre>
 <p>This code is commented out and not actually executed in the script. It is included as an example of how to create a new user account using the Pixela API.</p>
 <p>The <code>graph_endpoint</code> constant is set to the URL for the API endpoint that is used to create a new graph for the user. The <code>graph_config</code> dictionary contains the configuration settings for the graph, including the ID, name, unit, type, and color.</p>
-<code>graph_endpoint = <span>f"<span>{pixela_endpoint}</span>/<span>{USERNAME}</span>/graphs"</span>
+<pre><code>graph_endpoint = <span>f"<span>{pixela_endpoint}</span>/<span>{USERNAME}</span>/graphs"</span>
 
 graph_config = {
     <span>"id"</span>: GRAPH_ID,
@@ -34,7 +34,7 @@ graph_config = {
 }
 </code></pre>
 <p>The <code>pixel_creation_endpoint</code> constant is set to the URL for the API endpoint that is used to create a new pixel on the graph. The current date is obtained using the <code>datetime.now()</code> function and formatted as a string in the format <code>YYYYMMDD</code>. The <code>pixel_data</code> dictionary contains the data for the new pixel, including the date and the quantity (which is obtained from the user via input).</p>
-<code>pixel_creation_endpoint = <span>f"<span>{pixela_endpoint}</span>/<span>{USERNAME}</span>/graphs/<span>{GRAPH_ID}</span>"</span>
+<pre><code>pixel_creation_endpoint = <span>f"<span>{pixela_endpoint}</span>/<span>{USERNAME}</span>/graphs/<span>{GRAPH_ID}</span>"</span>
 
 today = datetime.now()
 
@@ -54,7 +54,7 @@ This code <span>is</span> commented out <span>and</span> <span>not</span> actual
 
 The <code>delete_endpoint</code> constant <span>is</span> <span>set</span> <span>to</span> the URL <span>for</span> the API endpoint that <span>is</span> used <span>to</span> delete an existing pixel <span>on</span> the graph.
 
-<code>delete_endpoint = f<span>"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{today.strftime('%Y%m%d')}"</span></code>
+<pre><code>delete_endpoint = f<span>"{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{today.strftime('%Y%m%d')}"</span></code>
 </code></pre>
 <p>This code is also commented out and not actually executed in the script. It is included as an example of how to delete an existing pixel on the graph using the Pixela API.</p>
 <p>The script demonstrates how to create a new user account, create a new graph, add a new pixel to the graph, update an existing pixel on the graph, and delete an existing pixel on the graph. The code is structured as a series of commented-out sections that can be uncommented and executed separately to demonstrate the functionality of the Pixela API.</p>
