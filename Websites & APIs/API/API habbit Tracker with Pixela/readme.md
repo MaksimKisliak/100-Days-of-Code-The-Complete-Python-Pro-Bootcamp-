@@ -5,10 +5,10 @@ TOKEN = <span>"YOUR SELF GENERATED TOKEN"</span>
 GRAPH_ID = <span>"YOUR GRAPH ID"</span>
 </code></pre>
 <p>The <code>pixela_endpoint</code> constant is then set to the base URL for the Pixela API. This value will be used as the base URL for all requests to the API.</p>
-<pre><span></span><code>pixela_endpoint = <span>"https://pixe.la/v1/users"</span>
+<pre><code>pixela_endpoint = <span>"https://pixe.la/v1/users"</span>
 </code></pre>
 <p>Next, the code defines a dictionary <code>user_params</code> that contains the user parameters that will be sent in a POST request to the Pixela API to create a new user. The dictionary contains the user's token, username, and agreement to the terms of service.</p>
-<code>user_params = {
+<pre><code>user_params = {
     <span>"token"</span>: TOKEN,
     <span>"username"</span>: USERNAME,
     <span>"agreeTermsOfService"</span>: <span>"yes"</span>,
@@ -29,7 +29,7 @@ graph_config = {
 </code></pre>
 <p>This code is also commented out and not actually executed in the script. It is included as an example of how to create a new graph using the Pixela API.</p>
 <p>The <code>headers</code> dictionary is defined with the <code>X-USER-TOKEN</code> header set to the user's token. This header is used in all requests to the API to authenticate the user.</p>
-<code>headers = {
+<pre><code>headers = {
     <span>"X-USER-TOKEN"</span>: TOKEN
 }
 </code></pre>
@@ -44,11 +44,11 @@ pixel_data = {
 }
 </code></pre>
 <p>A POST request is then sent to the API using the <code>requests.post()</code> method, with the endpoint URL, pixel data, and headers as parameters. The response from the API is printed to the console.</p>
-<code>response = requests.post(url=pixel_creation_endpoint, json=pixel_data, headers=headers)
+<pre><code>response = requests.post(url=pixel_creation_endpoint, json=pixel_data, headers=headers)
 <span>print</span>(response.text)
 </code></pre>
 <p>The <code>update_endpoint</code> constant is set to the URL for the API endpoint that is used to update an existing pixel on the graph. The <code>new_pixel_data</code> dictionary contains the new quantity value for the pixel.</p>
-<code>update_endpoint = <span>f"<span>{pixela_endpoint}</span>/<span>{USERNAME}</span>/graphs/{GRAPH_ID}/{today.strftime('%Y%m%d')}"</p>
+<pre><code>update_endpoint = <span>f"<span>{pixela_endpoint}</span>/<span>{USERNAME}</span>/graphs/{GRAPH_ID}/{today.strftime('%Y%m%d')}"</p></pre>
 <p>new_pixel_data = { "quantity": "4.5" }</code>
 This code <span>is</span> commented out <span>and</span> <span>not</span> actually executed <span>in</span> the script. It <span>is</span> included <span>as</span> an example <span>of</span> how <span>to</span> update an existing pixel <span>on</span> the graph <span>using</span> the Pixela API.
 
