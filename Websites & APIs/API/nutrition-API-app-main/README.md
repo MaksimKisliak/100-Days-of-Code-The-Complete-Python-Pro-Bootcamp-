@@ -135,4 +135,3 @@ body_to_sheety_edit = {<span>'workout'</span>: {<span>'date'</span>: <span>'16/0
  <li>Here, a specific row is selected by modifying the endpoint and the new data is set as a dictionary <code>body_to_sheety_edit</code>.</li>
  <li>The <code>requests.put()</code> method sends the <code>PUT</code> request to the Sheety API with the updated row data and prints the response text.</li>
 </ul>
-<p>In summary, the code allows you to log your workouts by sending a request to the Nutritionix API to get the calories burned, and then logging that data in a Google Sheet using Sheety API. It also provides an option to edit existing rows in the sheet.</p>
