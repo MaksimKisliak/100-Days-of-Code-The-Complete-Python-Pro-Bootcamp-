@@ -5,7 +5,7 @@
 <ol>
  <li>Importing Required Modules:</li>
 </ol>
-<pre><span>python</span>Copy code<code><span>from</span> flask <span>import</span> Flask, jsonify, render_template, request
+<pre><code><span>from</span> flask <span>import</span> Flask, jsonify, render_template, request
 <span>from</span> flask_sqlalchemy <span>import</span> SQLAlchemy
 <span>from</span> random <span>import</span> choice
 <span>import</span> os
@@ -21,7 +21,7 @@
 <ol>
  <li>Setting up Environment Variables:</li>
 </ol>
-<pre><span>csharp</span>Copy code<code>CAFE_API_KEY = os.environ.<span>get</span>(<span>'CAFE_API_KEY'</span>)
+<pre><code>CAFE_API_KEY = os.environ.<span>get</span>(<span>'CAFE_API_KEY'</span>)
 </code></pre>
 <ul>
  <li>The code uses <code>os.environ.get()</code> to access the environment variable, which stores a private API key needed to make certain API requests.</li>
@@ -29,7 +29,7 @@
 <ol>
  <li>Setting up the Flask Application:</li>
 </ol>
-<pre><span>scss</span>Copy code<code>app = <span>Flask</span>(__name__)
+<pre><code>app = <span>Flask</span>(__name__)
 </code></pre>
 <ul>
  <li>The <code>Flask</code> object is created with the name of the module as the argument.</li>
@@ -37,7 +37,7 @@
 <ol>
  <li>Setting up the SQLite Database:</li>
 </ol>
-<pre><span>less</span>Copy code<code><span>app</span><span>.config</span><span>[<span>'SQLALCHEMY_DATABASE_URI'</span>]</span> = '<span>sqlite</span>:<span>///cafes.db'</span>
+<pre><code><span>app</span><span>.config</span><span>[<span>'SQLALCHEMY_DATABASE_URI'</span>]</span> = '<span>sqlite</span>:<span>///cafes.db'</span>
 <span>db</span> = <span>SQLAlchemy</span>(app)
 </code></pre>
 <ul>
@@ -47,7 +47,7 @@
 <ol>
  <li>Defining the Cafe Model:</li>
 </ol>
-<pre><span>vbnet</span>Copy code<code><span>class</span> Cafe(db.Model):
+<pre><code><span>class</span> Cafe(db.Model):
     id = db.Column(db.<span>Integer</span>, primary_key=<span>True</span>)
     name = db.Column(db.<span>String</span>(<span>250</span>), unique=<span>True</span>, nullable=<span>False</span>)
     map_url = db.Column(db.<span>String</span>(<span>500</span>), nullable=<span>False</span>)
@@ -71,21 +71,21 @@
 <ol>
  <li>Defining API Endpoints (Continued):</li>
 </ol>
-<pre><span>python</span>Copy code<code><span>@app.route(<span><span>"/add"</span>, methods=[<span>"POST"</span>]</span>)</span>
+<pre><code><span>@app.route(<span><span>"/add"</span>, methods=[<span>"POST"</span>]</span>)</span>
 <span>def</span> <span>post_new_cafe</span>():
     ...
 </code></pre>
 <ul>
  <li>This endpoint allows the client to add a new cafe to the database.</li>
 </ul>
-<pre><span>python</span>Copy code<code><span>@app.route(<span><span>"/update-price/&lt;int:cafe_id&gt;"</span>, methods=[<span>"PATCH"</span>]</span>)</span>
+<pre><code><span>@app.route(<span><span>"/update-price/&lt;int:cafe_id&gt;"</span>, methods=[<span>"PATCH"</span>]</span>)</span>
 <span>def</span> <span>patch_new_price</span>(<span>cafe_id</span>):
     ...
 </code></pre>
 <ul>
  <li>This endpoint allows the client to update the price of coffee at a specified cafe.</li>
 </ul>
-<pre><span>python</span>Copy code<code><span>@app.route(<span><span>"/report-closed/&lt;int:cafe_id&gt;"</span>, methods=[<span>"DELETE"</span>]</span>)</span>
+<pre><code><span>@app.route(<span><span>"/report-closed/&lt;int:cafe_id&gt;"</span>, methods=[<span>"DELETE"</span>]</span>)</span>
 <span>def</span> <span>delete_cafe</span>(<span>cafe_id</span>):
     ...
 </code></pre>
@@ -95,10 +95,10 @@
 <ol>
  <li>Running the Flask Application:</li>
 </ol>
-<pre><span>markdown</span>Copy code<code>if <span>__name__</span> == '<span>__main__</span>':
+<pre><code>if <span>__name__</span> == '<span>__main__</span>':
 <span>    app.run()
 </span></code></pre>
 <ul>
  <li>The <code>if __name__ == '__main__'</code> block is used to run the Flask application.</li>
 </ul>
-<p>In summary, this code is a Flask application that uses an SQLite database to store information about cafes. The application provides API endpoints for retrieving information about cafes, adding a new cafe, updating the price of coffee at a cafe, and deleting a cafe from the database. The application also provides an HTML template that can be rendered in the client's browser.</p>
+
