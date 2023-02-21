@@ -2,6 +2,5 @@
 <p>The code uses <code>FlaskForm</code> and other modules from the <code>wtforms</code> package to create the forms for inputting cafe data, and <code>Flask_bootstrap</code> is used to style the templates and forms.</p>
 <p>The <code>add_cafe</code> route accepts GET and POST requests, and upon receiving valid form data, writes the data to a CSV file called <code>cafe-data.csv</code>. The application then redirects to the <code>/cafes</code> route to display the updated list of cafes. If the form data is not valid, the <code>add.html</code> template is rendered with the form data.</p>
 <p>The <code>cafes</code> route simply opens the <code>cafe-data.csv</code> file and reads its contents, storing the rows in a list. The <code>cafes.html</code> template is then rendered, passing the list of rows as an argument.</p>
-<p>Overall, the code provides a simple way for users to add cafes and their ratings, and for other users to view the list of cafes and their ratings.</p>
 
 <img align="middle" src="https://img-c.udemycdn.com/redactor/raw/2020-10-09_09-13-37-04380094370d0341c2655925c55b2e04.gif">
