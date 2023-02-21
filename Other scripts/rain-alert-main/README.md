@@ -10,4 +10,4 @@
 <p>To run the application, you need to execute the <code>weather_forecast.py</code> file. You can do this by running <code>python weather_forecast.py</code> in the command line.</p>
 <p>The application will fetch the weather forecast data from the OpenWeather API, check for the presence of precipitation in the forecast, and send an SMS message via Twilio to the specified phone number with a recommendation to take an umbrella or not.</p>
 <p>The <code>just_do_it</code> function is scheduled to run every day at a specific time using the <code>schedule</code> library. You can modify the scheduling parameters in the function to suit your needs.</p>Credits
-<p>This application was created by [your name] and is based on the OpenWeather API and the Twilio API.</p>
+
