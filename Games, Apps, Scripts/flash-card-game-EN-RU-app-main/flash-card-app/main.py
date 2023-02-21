@@ -7,7 +7,9 @@ from PIL import ImageTk, Image
 
 
 class FlashCardApp:
+    """A class for building a flashcard app to learn English vocabulary."""
     def __init__(self):
+         """Initializes the FlashCardApp object with default values."""
         self.background_color = "#B1DDC6"
         self.font_language = 'Arial 40 italic'
         self.font_word = 'Arial 60 bold'
@@ -54,6 +56,7 @@ class FlashCardApp:
 
     @staticmethod
     def get_sample_size():
+        """Asks the user for the number of flashcards to include in the deck."""
         sample_size = None
         while sample_size is None:
             try:
@@ -64,6 +67,7 @@ class FlashCardApp:
         return sample_size
 
     def sample(self):
+         """Selects a random sample of flashcards from the dictionary and adds them to the deck."""
         sample_size = self.get_sample_size()
         self.deck = self.dictionary.to_dict(sample_size)
         print(self.deck)
@@ -75,6 +79,7 @@ class FlashCardApp:
         self.show_card()
 
     def show_card(self):
+         """Displays the next flashcard in the deck."""
         if len(self.deck) > 0:
             self.current_card = self.deck.pop()
             self.flash_card_canvas.itemconfig(self.english_word_text, text=self.current_card['English'])
@@ -85,6 +90,7 @@ class FlashCardApp:
             self.show_results()
 
     def count_down(self, count):
+        """Displays a countdown timer before flipping the flashcard."""
         self.check_mark_button.config(state=DISABLED)
         self.deny_button.config(state=DISABLED)
         self.start_button.config(state=DISABLED)
@@ -100,6 +106,7 @@ class FlashCardApp:
             self.deny_button.config(state=NORMAL)
 
     def mark_as_learned(self):
+        """Marks the current flashcard as 'learned' and displays the next flashcard."""
         self.cards_learned.append(self.current_card)
         self.check_marks.config(
             text=f"Cards learned: {len(self.cards_learned)}\nCards missed: {len(self.cards_missed)}\n"
@@ -107,6 +114,7 @@ class FlashCardApp:
         self.show_card()
 
     def mark_as_missed(self):
+        """Marks the current flashcard as 'missed' and displays the next flashcard."""
         self.cards_missed.append(self.current_card)
         self.check_marks.config(
             text=f"Cards learned: {len(self.cards_learned)}\nCards missed: {len(self.cards_missed)}\n"
@@ -115,6 +123,7 @@ class FlashCardApp:
 
     @staticmethod
     def save_missed_words(cards_missed_words):
+        """Saves the list of missed flashcards to a text file."""
         save = messagebox.askyesno("Flashy", "Do you want to save missed words?")
         if save:
             filename = filedialog.asksaveasfilename(initialdir='/', title='Save Missed Cards',
@@ -126,6 +135,7 @@ class FlashCardApp:
                         f.write(f"{card['English']}: {card['Russian']}\n")
 
     def show_results(self):
+        """Displays the final results and saves the missed flashcards (if any) to a file."""
         self.check_marks.config(
             text=f"Cards learned: {len(self.cards_learned)}\nCards missed: {len(self.cards_missed)}\n"
                  f"Deck: {len(self.deck)}")
@@ -139,6 +149,7 @@ class FlashCardApp:
         self.window.after(1000, self.reset_screen)
 
     def reset_screen(self):
+        """Resets the screen and allows the user to start a new game."""
         self.start_button.config(state=NORMAL)
         self.flash_card_canvas.itemconfig(self.original_language_text, text="")
         self.cards_learned.clear()
@@ -150,15 +161,19 @@ class FlashCardApp:
                                           font=self.font_language)
 
     def start(self):
+        """Starts the flashcard game."""
         self.sample()
 
 
 class Dictionary:
+    """A class for getting English-Russian flashcards from an online API."""
     def __init__(self):
+        """Retrieves the flashcards from the online API and stores them as a dictionary."""
         response = requests.get("https://api.npoint.io/e10c8bb117f377353235")
         self.words = response.json()
 
     def to_dict(self, sample_size):
+        """Converts the list of flashcards to a dictionary and selects a random sample of a given size."""
         deck = self.words
         random.shuffle(deck)
         return deck[:sample_size]
