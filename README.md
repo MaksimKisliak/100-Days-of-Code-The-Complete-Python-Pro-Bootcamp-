@@ -1,4 +1,7 @@
 # 100 Days of Code: The Complete Python Pro Bootcamp  
+
+## This repository contains some independently completed or modified projects from the course as in the title, which I felt were worth posting here to solidify the information learned and new skills 
+### Below is the course structure taken from the course itself
 ### Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!
 
  ## What you'll learn
