@@ -22,7 +22,7 @@
  <li>230 articles</li>
  <li>129 downloadable resources</li>
 
-### Course content
+### Course content. Here you will find the original version of Angela's GitHub repository for the "100 Days of Python" course saved as a single file HTML document  - https://github.com/SadSack963/100-days-of-python
 #### 101 sections • 676 lectures • 64h 3m total length
 
  ## Day 1 - Beginner - Working with Variables in Python to Manage Data17 lectures • 1hr 30min
